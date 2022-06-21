@@ -1,18 +1,16 @@
 import './App.css';
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from './redux/store';
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  // useSelector: counterSliceで設定したcountの値を取得することができます。
+  // stateのドットの直後に設定しているcounterはstore.tsのreducerに設定したオブジェクトのプロパティのcounter。
+  // counterSlice.tsファイルのnameで設定した”counter”ではない。
+  const count = useSelector((state: RootState) => state.counter.count);
 
   return (
     <div className="App">
       <h1>Count: {count}</h1>
-      <button type="button" onClick={() => setCount(count + 1)}>
-        Up
-      </button>
-      <button type="button" onClick={() => setCount(count - 1)}>
-        Down
-      </button>
     </div>
   );
 };
