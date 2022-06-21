@@ -1,25 +1,5 @@
 # 概要
 
-React TypeScript の開発環境を作成した
-
-## 環境作成の内訳
-
-### create-react-app
-
-```
-npx create-react-app react-tutorial-tic-tac-toe --template typescript
-```
-
-## 導入ライブラリ
-
-### ESlint
-
-### Prettier
-
-### CommitLint
-
-### Storybook
-
-### Husky
-
-###
+目的: Redux Toolkit と Redux Thunk の使い方について理解する<br><br>
+なぜやるのか：大規模な開発で状態管理が行えるようになるため、状態管理ライブラリで代表的な Redux を学習する<br><br>
+やったこと: ReduxToolkit と Redux Thunk の使い方について学んだ
