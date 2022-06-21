@@ -56,6 +56,7 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
+    'no-param-reassign': ['error', { props: false }],
     semi: ['error', 'always'],
     'semi-spacing': ['error', { after: true, before: false }],
     'semi-style': ['error', 'last'],
@@ -71,4 +72,4 @@ module.exports = {
       },
     },
   },
-}
+};
