@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Counter } from '../type/counter';
+import { Counter } from '../types/counter';
 
 export const counterSlice = createSlice({
   // name: Sliceを識別するための名前を設定する

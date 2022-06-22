@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { User } from '../type/users';
+import { User } from '../types/users';
 
 const userSlice = createSlice({
   name: 'users',
   initialState: {
-    users: [{}],
+    users: [] as User[],
   },
   reducers: {
     setUsers: (state, action: PayloadAction<User[]>) => {

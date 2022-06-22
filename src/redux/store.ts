@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './counterSlice';
+import usersReducer from './userSlice';
 
 // すべてのコンポーネントからアクセス可能なstoreと呼ばれる場所を作成する
 export const store = configureStore({
@@ -8,6 +9,7 @@ export const store = configureStore({
     counter: counterReducer,
     // 複数のSliceを作成した場合は作成したSliceをimportしてreducerプロパティのオブジェクトに追加することで
     // 各Sliceで設定したstateをすべてのコンポーネントからアクセスすることが可能になります。
+    users: usersReducer,
   },
 });
 
